@@ -10,53 +10,107 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Introduction to HTML</title>
+    <style>
+        .center {
+            text-align: center;
+            padding-top: 5px;
+            position: fixed;
+            bottom: 0;
+            padding-left: 25%;
+
+        }
+
+        .container {
+            color: white;
+            height: 5 px;
+        }
+
+        .pagination {
+            display: inline-flexbox;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+
+            transition: background-color .3s;
+            border: 5px solid white;
+            margin: 4 5px;
+        }
+
+        .pagination a.active {
+            background-color: #d9d9fd;
+            color: rgb(2, 2, 51);
+            border-right: 5px solid white;
+            border-left: 5px solid white;
+            font-size: large;
+
+        }
+
+        .pagination a:hover:not(.active) {
+            border: 8px solid white;
+            background-color: #BDBDF5;
+        }
+
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+    </style>
+
+
 </head>
-<header class="text-gray-600 body-font" style="background-color:#252580;">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <style>
-                .default {
-                    border-color: #BDBDF5;
-                    color: black;
-                }
 
-                .default:hover {
-                    background: #BDBDF5;
-
-                }
-            </style>
-            <a href="/web pages/HTML.html" class="mr-5 hover:text-gray-900"
-                style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:x-large;">
-                <button class="btn default" style="color: white;">BACK</button>
-            </a>
-        </a>
-
-        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <style>
-                .default {
-                    border-color: #BDBDF5;
-                    color: black;
-                }
-
-                .default:hover {
-                    background: #BDBDF5;
-
-                }
-            </style>
-            <a href="/web pages/tags.html" class="mr-5 hover:text-gray-900"
-                style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:x-large;">
-                <button class="btn default" style="color: white;">NEXT</button>
+<body style="background-color: #BDBDF5;">
+    <header class="text-gray-600 body-font" style="background-color:#BDBDF5; position:sticky;">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <a class="text-gray-2000 hover:text-gray-2000"
+                    style="font-size: xx-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder;color: black;">Your
+                    Code</a>
+                <a style="color: #BDBDF5;">
+                    ...
+                </a>
+                <a>
+                    <i class="fa fa-desktop" style="font-size:32px; color: black;"></i>
+                </a>
             </a>
 
-
-        </nav>
-
-    </div>
-</header>
+        </div>
+    </header>
 
 
-<body>
+    <section>
+        <div class="center">
+            <div class="pagination">
+                <a href="#" style="font-size: xx-large;font-weight: bolder;">&laquo;</a>
+
+                <a href="./introHTM.html" class="active" style="font-size: xx-large;font-weight: bolder;"> Introduction
+                </a>
+
+                <a href="./Layout.html" style="font-size: xx-large;font-weight: bolder;">&#8594</a>
+
+                <a href="#" style="font-size: xx-large;font-weight: bolder;">&raquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repudiandae sit iusto vel exercitationem, in
+        fugiat repellendus adipisci impedit et voluptatum assumenda ea odit, reiciendis consequatur quos, quia ad
+        reprehenderit aliquam non hic! Sapiente aperiam, dignissimos ipsam maxime ducimus ratione error inventore sunt
+        nulla perspiciatis, pariatur placeat, consectetur praesentium quae.
+    </article>
+
 
 </body>
+
 
 </html>
