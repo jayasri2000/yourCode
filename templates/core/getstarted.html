@@ -1,76 +1,36 @@
-<!DOCTYPE html>
-<div lang="en">
+{% extends "base.html" %}
+{% load static %}
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% block title %}Get Started{% endblock title %}
 
-        <title>Get Started</title>
-    </head>
-    <header class="text-gray-600 body-font" style="background-color:#BDBDF5;">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <a class="text-gray-2000 hover:text-gray-2000"
-                    style="font-size: xx-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder;color: black;">Your
-                    Code</a>
-                <a style="color: #BDBDF5;">
-                    ...
-                </a>
-                <a>
-                    <i class="fa fa-desktop" style="font-size:32px; color: black;"></i>
-                </a>
-                <a style="color: #BDBDF5;">
+    {% block heading %}
+    <a style="color: #252580;">
                     ...................................
-                </a>
-                <a class="text-gray-2000 hover:text-gray-2000"
-                    style="font-size: xx-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder;color: black;">Hear
+    </a>
+      <a class="text-gray-2000 hover:text-gray-2000"
+                    style="font-size: xx-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bolder;color: white;">Hear
                     from people like you, who are with you and for you.</a>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <style>
-                    .default {
-                        border-color: #e7e7;
-                        color: black;
-                    }
-
-                    .default:hover {
-                        background: #e7e7;
-                    }
-                </style>
-                <a href="/web pages/index.html" class="mr-5 hover:text-gray-900"
-                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size:x-large;">
-                    <button class="btn default">BACK</button>
-                </a>
-
-
-            </nav>
-
-        </div>
-    </header>
+    {% endblock heading %}
+                
+    {% block content %}
     <hr>
     <div class="text-gray-600 body-font">
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
 
             <a>
-                <img src="/E-Learn/m1.gif" alt="Smiley face" width="110" height="110">
+                <img src="{% static 'images/m1.gif' %}" alt="Smiley face" width="110" height="110">
             </a>
             <a style="color: white;">
                 ....................
             </a>
             <a>
-                <img src="/E-Learn/m2.gif" alt="Smiley face" width="100" height="100">
+                <img src="{% static 'images/m2.gif' %}" alt="Smiley face" width="100" height="100">
             </a>
             <a style="color: white;">
                 ....................
             </a>
             <a>
-                <img src="/E-Learn/m5.gif" alt="Smiley face" width="90" height="90">
+                <img src="{% static 'images/m5.gif' %}" alt="Smiley face" width="90" height="90">
             </a>
         </nav>
     </div>
@@ -187,7 +147,7 @@
 
 
                 <a>
-                    <img src="/E-Learn/dev1.gif" alt="Smiley face" width="200" height="200">
+                    <img src="{% static 'images/dev1.gif' %}" alt="Smiley face" width="200" height="200">
                 </a>
 
             </nav>
@@ -300,7 +260,7 @@
 
 
                 <a>
-                    <img src="/E-Learn/dev2.gif" alt="Smiley face" width="300" height="200">
+                    <img src="{% static 'images/dev2.gif' %}" alt="Smiley face" width="300" height="200">
                 </a>
 
             </nav>
@@ -408,73 +368,5 @@
             </div>
         </div>
     </section>
-    <footer class="text-gray-600 body-font" style="background-color:#BDBDF5;">
-        <div class="bg-gray-100">
-            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 Your Code — by a fellow IT
-                    Undergrad
-                    </a>
-                </p>
-
-            </div>
-        </div>
-        <div
-            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
-
-                <i class="fa fa-desktop" style="font-size:22px"></i>
-                <a class="text-gray-600 hover:text-gray-800">Your Code</a>
-
-
-                <p class="mt-2 text-sm text-gray-500">Do everything you think you cant. Start today!</p>
-                <p class="mt-2 text-sm text-gray-500">HAPPY CODING :)</p>
-
-            </div>
-            <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTACT</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <i class="fa fa-envelope" style="font-size:20px"></i>
-                            <a href="mailto: jayasri.dey9@gmail.com">Send Email</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-github" style="font-size:24px"></i>
-                            <a class="text-gray-600 hover:text-gray-800"
-                                href="https://github.com/jayasri2000">Github</a>
-                        </li>
-
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SOCIAL</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <i class="fa fa-facebook-square" style="font-size:24px"></i>
-                            <a class="text-gray-600 hover:text-gray-800"
-                                href="https://www.facebook.com/Jayasri.dey6/">FACEBOOK</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-instagram" style="font-size:24px"></i>
-                            <a class="text-gray-600 hover:text-gray-800"
-                                href="https://www.instagram.com/_._a_whim_.away._/">INSTAGRAM</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-linkedin-square" style="font-size:24px"></i>
-                            <a class="text-gray-600 hover:text-gray-800"
-                                href="https://www.linkedin.com/in/jayasri-dey-55625918b/">LINKED IN</a>
-                        </li>
-
-                    </nav>
-                </div>
-
-            </div>
-        </div>
-
-    </footer>
-
-    <body>
-
-    </body>
-
-    </html>
+      
+    {% endblock content %}
